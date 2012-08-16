@@ -1,0 +1,10 @@
+<h1>Stamps</h1>
+
+<% @stamps.each do |stamp| %>
+  <div class="stamp">
+    <%= image_tag stamp.image_url(:blue) %>
+  </div>
+<% end %>
+<div class="clear"></div>
+
+<p><%= link_to "New Stamp", new_stamp_path %></p>
